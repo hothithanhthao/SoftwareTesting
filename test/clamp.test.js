@@ -27,7 +27,7 @@ describe("clamp", () => {
       expect(clamp(clampNumber,lowerBound,upperBound)).toEqual(output);
     });
 
-    test("should return NaN if input is a string and throw TypeError", () => {
+    test("should return NaN if input is a string and throw TypeError - TC fail", () => {
       const upperBound = 5;
       const lowerBound = -5;
       const clampNumber = 'Hello';
