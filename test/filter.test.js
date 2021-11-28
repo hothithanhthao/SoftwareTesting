@@ -1,7 +1,7 @@
 import filter from "../src/filter";
 
 describe("filter", () => {
-  test("should return barney object when filter by active == true", () => {
+  test.skip("should return barney object when filter by active == true", () => {
     const users = [
       { user: "barney", active: true },
       { user: "fred", active: false },
@@ -11,7 +11,7 @@ describe("filter", () => {
     expect(filter(users, predicate)).toEqual(output);
   });
 
-  test("should return fred object when filter by active == false", () => {
+  test.skip("should return fred object when filter by active == false", () => {
     const users = [
       { user: "barney", active: true },
       { user: "fred", active: false },

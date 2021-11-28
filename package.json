@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "coverage": "c8 jest",
+    "report": "c8 report -r html",
     "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
   },
   "repository": {
