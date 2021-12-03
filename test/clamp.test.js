@@ -11,9 +11,9 @@ describe("clamp", () => {
     });
 
     test.skip("should clamp the clamped number is the upper bound if the number to clamp is greater than the lower and upper bound - TC fail", () => {
-      const upperBound = 10;
+      const upperBound = 5;
       const lowerBound = -5;
-      const clampNumber = 5;
+      const clampNumber = 10;
       const output = 5;
 
       expect(clamp(clampNumber,lowerBound,upperBound)).toEqual(output);
@@ -23,7 +23,7 @@ describe("clamp", () => {
       const upperBound = 5;
       const lowerBound = -5;
       const clampNumber = 2;
-      const output = 5;
+      const output = 2;
       expect(clamp(clampNumber,lowerBound,upperBound)).toEqual(output);
     });
 
